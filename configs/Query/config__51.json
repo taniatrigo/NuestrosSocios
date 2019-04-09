@@ -1,0 +1,134 @@
+{
+  "hideLayersAfterWidgetClosed": true,
+  "labelTasks": "Consulta",
+  "labelResults": "Resultado",
+  "showFilterLabel": true,
+  "criteiraLabel": "Seleccione los socios según el canal que prefieren para la comunicación",
+  "spatialFilterLabel": "Spatial filters",
+  "queries": [
+    {
+      "url": "",
+      "name": "CANAL COMUNICACIÓN",
+      "icon": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "CANAL",
+              "label": "CANAL",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIsAnyOf",
+            "valueObj": {
+              "isValid": true,
+              "type": "multiple",
+              "value": []
+            },
+            "interactiveObj": {
+              "prompt": "Seleccione el canal de comunicación",
+              "hint": "Se mostrarán los socios que prefieren comunicarse por el canal elegido",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "expr": "1=1",
+            "displaySQL": "1=1"
+          },
+          {
+            "fieldObj": {
+              "name": "BARRIO",
+              "label": "BARRIO",
+              "dateFormat": "",
+              "shortType": "string",
+              "type": "esriFieldTypeString"
+            },
+            "operator": "stringOperatorIsAnyOf",
+            "valueObj": {
+              "isValid": true,
+              "type": "multiple",
+              "value": []
+            },
+            "interactiveObj": {
+              "prompt": "Seleccione el barrio que prefiera",
+              "hint": "Se mostrarán los socios en ese barrio elegido",
+              "cascade": "previous"
+            },
+            "caseSensitive": false,
+            "expr": "1=1",
+            "displaySQL": "1=1"
+          }
+        ],
+        "expr": "(1=1) AND (1=1)",
+        "displaySQL": "(1=1) AND (1=1)"
+      },
+      "showSQL": false,
+      "spatialFilter": {
+        "currentMapExtent": null,
+        "drawing": null,
+        "useFeatures": null,
+        "fullLayerExtent": null
+      },
+      "popupInfo": {
+        "readFromWebMap": true
+      },
+      "orderByFields": [],
+      "useLayerSymbol": false,
+      "resultsSymbol": {
+        "color": [
+          150,
+          1,
+          43,
+          128
+        ],
+        "size": 11.25,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      },
+      "canModifySymbol": false,
+      "enableExport": false,
+      "defaultExpand": true,
+      "singleResultLayer": true,
+      "webMapLayerId": "SociosPFM_5594"
+    }
+  ]
+}
